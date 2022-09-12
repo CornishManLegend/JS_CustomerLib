@@ -1,0 +1,23 @@
+{
+  "name": "js_customerlib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint *.js",
+    "test": "jest --coverage",
+    "test-watch": "jest --coverage --watch",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^7.32.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "jest": "^29.0.3",
+    "prettier": "^2.7.1"
+  }
+}
