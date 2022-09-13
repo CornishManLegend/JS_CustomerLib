@@ -23,19 +23,19 @@ export default class CustomerValidator {
             errorList.push(errorMessages.LastNameMaxLenghtException);
         }
 
-        if (!customer.addresses.length) {
+        if (!customer.addresses || !customer.addresses.length) {
             errorList.push(errorMessages.AddressMissingException)
         }
 
-        if (!phoneRegex.test(customer.phoneNumber)) {
+        if (customer.phoneNumber && !phoneRegex.test(customer.phoneNumber)) {
             errorList.push(errorMessages.IncorrectPhoneNumberFormat);
         }
 
-        if (!emailRegex.test(customer.email)) {
+        if (customer.email && !emailRegex.test(customer.email)) {
             errorList.push(errorMessages.IncorrectEmailFormat);
         }
 
-        if (!customer.notes.length) {
+        if (!customer.notes || !customer.notes.length) {
             errorList.push(errorMessages.NotesMissingException);
         }
 
