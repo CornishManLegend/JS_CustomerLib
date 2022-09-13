@@ -1,0 +1,28 @@
+name: Running JS Customer Library Tests
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run the tests
+        run: npm run test-cov
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
