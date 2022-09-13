@@ -20,7 +20,7 @@ export default class AddressValidator {
             errorList.push(errorMessages.AddressLine1MaxLenghtException);
         }
 
-        if (address.addressLine2.length > addressLine2MaxLength) {
+        if (address.addressLine2 && address.addressLine2.length > addressLine2MaxLength) {
             errorList.push(errorMessages.AddressLine2MaxLenghtException);
         }
 
