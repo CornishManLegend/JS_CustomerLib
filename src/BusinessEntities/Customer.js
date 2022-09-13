@@ -9,10 +9,6 @@ export default class Customer extends Person {
     #TotalPurchasesAmount = null;
     #LastPurchaseDate = null;
 
-    // constructor() {
-    //     super();
-    // }
-
     constructor({
                     firstName,
                     lastName,

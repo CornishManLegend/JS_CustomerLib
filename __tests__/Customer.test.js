@@ -1,4 +1,3 @@
-import {expect, test} from '@jest/globals';
 import Customer from '../src/BusinessEntities/Customer';
 import Address from '../src/BusinessEntities/Address';
 

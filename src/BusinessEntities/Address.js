@@ -2,7 +2,7 @@ export default class Address {
 
     #AddressLine1
     #AddressLine2
-    #Type
+    #AddressType
     #City
     #PostalCode
     #State
@@ -19,7 +19,7 @@ export default class Address {
                 }) {
         this.#AddressLine1 = addressLine1
         this.#AddressLine2 = addressLine2
-        this.#Type = addressType
+        this.#AddressType = addressType
         this.#City = city
         this.#PostalCode = postalCode
         this.#State = state
@@ -43,11 +43,11 @@ export default class Address {
     }
 
     get type() {
-        return this.#Type;
+        return this.#AddressType;
     }
 
     set type(addressType) {
-        this.#Type = addressType;
+        this.#AddressType = addressType;
     }
 
     get city() {
