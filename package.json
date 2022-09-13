@@ -12,9 +12,17 @@
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CornishManLegend/JS_CustomerLib.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CornishManLegend/JS_CustomerLib/issues"
+  },
+  "homepage": "https://github.com/CornishManLegend/JS_CustomerLib#readme",
   "dependencies": {
     "eslint": "^7.32.0"
   },
