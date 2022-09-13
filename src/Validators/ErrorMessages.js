@@ -1,0 +1,23 @@
+export const FirstNameMaxLenghtException = 'Exceeded the length of the name in 50 characters';
+export const LastNameIsRequiredException = 'Last name is required';
+export const LastNameMaxLenghtException = 'Exceeded the length of the last name in 50 characters';
+export const AddressMissingException = 'The addresse is missing';
+export const IncorrectPhoneNumberFormat = 'Incorrect the phone number format';
+export const IncorrectEmailFormat = 'Incorrect the email format';
+export const NotesMissingException = "Notes are missing";
+export const IncorrectTotalPurchasesAmount = 'The value of the total number of purchases is erroneous';
+export const NotValidlastPurchaseDate = 'The last purchase date is not valid';
+
+export const AddressLine1IsRequiredException = 'Address line1 is required';
+export const AddressLine1MaxLenghtException = 'Exceeded the length of the AddressLine1 in 100 characters';
+export const AddressLine2MaxLenghtException = 'Exceeded the length of the AddressLine2 in 100 characters';
+export const AddressTypeRequiredException = 'AddressType is required';
+export const AddressTypeException = 'AddressType should be Shipping or Billing';
+export const CityIsRequiredException = 'City name is required';
+export const CityMaxLenghtException = 'Exceeded the length of the City name in 50 character';
+export const PostalCodeIsRequiredException = 'PostalCode is required';
+export const PostalCodeMaxLenghtException = 'Exceeded the length of the PostalCode in 6 characters';
+export const StateNameIsRequiredException = 'State name is required';
+export const StateNameMaxLenghtException = 'Exceeded the length of the state name in 20 characters';
+export const CountryNameIsRequiredException = 'Country name is required';
+export const InvalidCountryName = 'Country name should be United States or Canad';

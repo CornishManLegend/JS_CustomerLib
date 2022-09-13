@@ -11,7 +11,7 @@ export default class Address {
     constructor({
                     addressLine1,
                     addressLine2,
-                    type,
+                    addressType,
                     city,
                     postalCode,
                     state,
@@ -19,7 +19,7 @@ export default class Address {
                 }) {
         this.#AddressLine1 = addressLine1
         this.#AddressLine2 = addressLine2
-        this.#Type = type
+        this.#Type = addressType
         this.#City = city
         this.#PostalCode = postalCode
         this.#State = state
@@ -46,8 +46,8 @@ export default class Address {
         return this.#Type;
     }
 
-    set type(type) {
-        this.#Type = type;
+    set type(addressType) {
+        this.#Type = addressType;
     }
 
     get city() {
