@@ -3,7 +3,6 @@ import * as errorMessages from '../src/Validators/ErrorMessages';
 import Customer from '../src/BusinessEntities/Customer';
 import Address from '../src/BusinessEntities/Address';
 
-
 const validAddress = new Address({
     addressLine1: 'Mulholland Drive',
     addressLine2: '13/1',

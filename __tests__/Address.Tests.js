@@ -24,9 +24,9 @@ test('Should be able to get/set addressLine2', () => {
     expect(address.addressLine2).toBe('New line2 adr');
 });
 
-address.type = "Shipping";
+address.addressType = "Shipping";
 test('Should be able to get/set addressType', () => {
-    expect(address.type).toBe("Shipping");
+    expect(address.addressType).toBe("Shipping");
 });
 
 address.city = 'Los Angeles';

@@ -16,7 +16,7 @@ export default class AddressValidator {
             errorList.push(errorMessages.AddressLine1IsRequiredException);
         }
 
-        if (address.addressLine1.length > addressLine1MaxLength) {
+        if (address.addressLine1 && address.addressLine1.length > addressLine1MaxLength) {
             errorList.push(errorMessages.AddressLine1MaxLenghtException);
         }
 
@@ -28,21 +28,21 @@ export default class AddressValidator {
             errorList.push(errorMessages.AddressTypeRequiredException);
         }
 
-        if (address.addressType !== "Shipping" || address.addressType !== "Billing") {
+        if (!(address.addressType === "Shipping" || address.addressType === "Billing")) {
             errorList.push(errorMessages.AddressTypeException);
         }
 
         if (!address.city) {
             errorList.push(errorMessages.CityIsRequiredException);
         }
-        if (address.city.length > cityNameMaxLength) {
+        if (address.city && address.city.length > cityNameMaxLength) {
             errorList.push(errorMessages.CityMaxLenghtException);
         }
 
         if (!address.postalCode) {
             errorList.push(errorMessages.PostalCodeIsRequiredException);
         }
-        if (address.postalCode.length > postalCodeMaxLength) {
+        if (address.postalCode && address.postalCode.length > postalCodeMaxLength) {
             errorList.push(errorMessages.PostalCodeMaxLenghtException);
         }
 

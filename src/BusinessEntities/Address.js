@@ -42,11 +42,11 @@ export default class Address {
         this.#AddressLine2 = addressLine2;
     }
 
-    get type() {
+    get addressType() {
         return this.#AddressType;
     }
 
-    set type(addressType) {
+    set addressType(addressType) {
         this.#AddressType = addressType;
     }
 
